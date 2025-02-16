@@ -62,25 +62,18 @@ function Contact() {
       <Form>
       <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
             <Form.Label>Name</Form.Label>
-            <Form.Control type="name" placeholder="name" />
+            <Form.Control type="name" onChange={handleInputChange} placeholder="name" />
           </Form.Group>
           <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
             <Form.Label>Email address</Form.Label>
-            <Form.Control type="email" placeholder="name@example.com" />
+            <Form.Control type="email" onChange={handleInputChange} placeholder="name@example.com" />
           </Form.Group>
           <Form.Group className="mb-3" controlId="exampleForm.ControlTextarea1">
             <Form.Label>Message</Form.Label>
-            <Form.Control as="textarea" rows={3} />
+            <Form.Control as="textarea" onChange={handleInputChange} rows={3} />
           </Form.Group>
         </Form>
-        {/* <input
-          value={message}
-          name="message"
-          onChange={handleInputChange}
-          type="text"
-          placeholder="Message"
-        /> */}
-        <button type="submit">
+          <button type="submit">
           Submit
         </button>
       </form>
