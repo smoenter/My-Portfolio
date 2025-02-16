@@ -16,7 +16,7 @@ export default function NavLinks() {
             <Nav.Link as={NavLink} to="/portfolio">Portfolio</Nav.Link>
           </Nav.Item>
           <Nav.Item>
-            <Nav.Link as={NavLink} to="/contacts">Contacts</Nav.Link>
+            <Nav.Link as={NavLink} to="/contact">Contact</Nav.Link>
           </Nav.Item>
           <Nav.Item>
             <Nav.Link as={NavLink} to="/resume">Resume</Nav.Link>
