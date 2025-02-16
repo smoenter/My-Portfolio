@@ -1,25 +1,34 @@
 import { NavLink } from 'react-router-dom';
-import Container from 'react-bootstrap/Container';
+import React from 'react'; 
+import Button from 'react-bootstrap/Button';
+import Card from 'react-bootstrap/Card';
 import Nav from 'react-bootstrap/Nav';
-import Navbar from 'react-bootstrap/Navbar';
- 
 
-function NavLinks() {
+export default function NavLinks() {
   return (
-    <>
-      <Navbar bg="primary" data-bs-theme="dark">
-        <Container>
-          <Navbar.Brand href="#home">Navbar</Navbar.Brand>
-          <Nav className="me-auto">
+    <Card>
+      <Card.Header>
+        <Nav variant="pills" defaultActiveKey="#first">
+          <Nav.Item>
             <Nav.Link as={NavLink} to="/about">About Me</Nav.Link>
+          </Nav.Item>
+          <Nav.Item>
             <Nav.Link as={NavLink} to="/portfolio">Portfolio</Nav.Link>
-            <Nav.Link as={NavLink} to="/contact">Contact</Nav.Link>
+          </Nav.Item>
+          <Nav.Item>
+            <Nav.Link as={NavLink} to="/contacts">Contacts</Nav.Link>
+          </Nav.Item>
+          <Nav.Item>
             <Nav.Link as={NavLink} to="/resume">Resume</Nav.Link>
-          </Nav>
-        </Container>
-      </Navbar>
-    </>
+          </Nav.Item>
+        </Nav>
+      </Card.Header>
+      <Card.Body>
+        <Button variant="primary">Go somewhere</Button>
+      </Card.Body>
+    </Card>
   );
 }
 
-export default NavLinks;
+
+
