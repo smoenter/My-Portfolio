@@ -7,6 +7,7 @@ export default function Resume() {
         <h1>Stacey Moenter</h1>
         <p>Email: <a href="staceymoenter@gmail.com">staceymoenter@gamil.com</a> | Phone: (937) 361-9646</p>
         <p>LinkedIn: <a href="https://www.linkedin.com/in/stacey-moenter-6017a064/" target="_blank" rel="noopener noreferrer">linkedin.com/in/staceymoenter</a></p>
+        <p>GitHub: <a href="https://github.com/smoenter" target="_blank" rel="noopener noreferrer">github.com/smoenter</a></p>
       </header>
 
       <section className="experience">
