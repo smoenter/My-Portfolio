@@ -12,7 +12,7 @@ function Portfolio() {
           bulk of the card's content.
         </Card.Text>
         <Card.Link href="https://github.com/smoenter">GitHub Link</Card.Link>
-        <Card.Link href="#">Another Link</Card.Link>
+        <Card.Link href="https://www.linkedin.com/in/stacey-moenter-6017a064/">Linkedin Link</Card.Link>
       </Card.Body>
     </Card>
     
