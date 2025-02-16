@@ -2,7 +2,7 @@
 import { Outlet } from 'react-router-dom';
 import Header from './components/Header';
 import Footer from './components/Footer';
-import NavLinks from './components/NavLinks.jsx';
+import NavLinks from './components/NavLinks';
 
 
 function App() {

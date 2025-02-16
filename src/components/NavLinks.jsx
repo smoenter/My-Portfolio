@@ -1,6 +1,5 @@
 import { NavLink } from 'react-router-dom';
 import React from 'react'; 
-import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
 import Nav from 'react-bootstrap/Nav';
 
@@ -23,9 +22,6 @@ export default function NavLinks() {
           </Nav.Item>
         </Nav>
       </Card.Header>
-      <Card.Body>
-        <Button variant="primary">Go somewhere</Button>
-      </Card.Body>
     </Card>
   );
 }

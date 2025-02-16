@@ -3,7 +3,7 @@ import Card from 'react-bootstrap/Card';
 
 function Portfolio() {
   return (
-    <Card style={{ width: '18rem' }}>
+    <Card> 
       <Card.Body>
         <Card.Title>Portfolio</Card.Title>
         <Card.Subtitle className="mb-2 text-muted">Projects</Card.Subtitle>
