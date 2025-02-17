@@ -1,24 +1,57 @@
 import { useState } from 'react';
 import { Form, Button } from 'react-bootstrap';
 
-// Import helper functions for validation
-import { validateName, validateEmail, checkMessage } from './utils/helpers'; // Adjust path if needed
+
+// Regular expression to validate email format
+const validateEmail = (email) => {
+  const emailRegex = /\S+@\S+\.\S+/;
+  return emailRegex.test(email);
+};
 
 function Contact() {
   // Setting up state variables
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
   const [message, setMessage] = useState('');
-  const [errorMessages, setErrorMessages] = useState([]);
+  const [errors, setErrors] = useState({
+    name: '',
+    email: '',
+    message:''
+  });
 
   // Handling input changes
   const handleInputChange = (e) => {
     const { name, value } = e.target;
-
+   
     // Updating the corresponding state variable based on input field
     if (name === 'name') setName(value);
     if (name === 'email') setEmail(value);
     if (name === 'message') setMessage(value);
+  };
+
+   // Handle input blur (when user moves cursor out of field)
+   const handleBlur = (e) => {
+    const { name, value } = e.target;
+    let errorMessage = '';
+
+    if (value.trim() === '') {
+      errorMessage = `${name.charAt(0).toUpperCase() + name.slice(1)} is required`;
+    }
+
+    setErrors((prevErrors) => ({
+      ...prevErrors,
+      [name]: errorMessage
+    }));
+  };
+
+  // Handle email validation when the user types
+  const handleEmailBlur = () => {
+    if (!validateEmail(email)) {
+      setErrors((prevErrors) => ({
+        ...prevErrors,
+        email: 'Invalid email address'
+      }));
+    }
   };
 
   // Handling form submission
@@ -26,30 +59,29 @@ function Contact() {
     e.preventDefault();
 
     // Resetting previous error messages
-    let errors = [];
+    let formErrors = {...errors};
 
     // Validation checks
-    if (!validateName(name)) errors.push('Name is required');
-    if (!validateEmail(email)) errors.push('Email is invalid');
-    if (!checkMessage(message)) errors.push('Message is required');
+    if (name.trim() === '') formErrors.name = 'Name is required';
+    if (email.trim() === '') formErrors.email = 'Email is required';
+    if (!validateEmail(email)) formErrors.email = 'Invalid email address';
+    if (message.trim() === '') formErrors.message = 'Message is required';
 
-    // If there are validation errors, we set them in the state
-    if (errors.length > 0) {
-      setErrorMessages(errors);
-      return; // Stop form submission if validation fails
-    }
+   // If there are errors, update the error state and don't submit
+   if (Object.values(formErrors).some((error) => error !== '')) {
+    setErrors(formErrors);
+    return;
+  }
 
     // If everything is valid, clear form and show a success message
     setName('');
     setEmail('');
     setMessage('');
     alert(`Hello ${name}, your message has been sent!`);
-
-    // Reset error messages after successful form submission
-    setErrorMessages([]);
+    setErrors({ name: '', email: '', message: '' });
   };
 
-  return (
+   return (
     <div className="container text-center">
       <h1>Contact</h1>
       <form onSubmit={handleFormSubmit}>
@@ -61,8 +93,10 @@ function Contact() {
               name="name"
               value={name}
               onChange={handleInputChange}
+              onBlur={handleBlur}
               placeholder="Your Name"
             />
+             {errors.name && <p className="error-text">{errors.name}</p>}
           </Form.Group>
 
           <Form.Group className="mb-3" controlId="formEmail">
@@ -72,8 +106,13 @@ function Contact() {
               name="email"
               value={email}
               onChange={handleInputChange}
+              onBlur={() => {
+                handleBlur({ target: { name: 'email', value: email } });
+                handleEmailBlur();
+              }}
               placeholder="name@example.com"
             />
+              {errors.email && <p className="error-text">{errors.email}</p>}
           </Form.Group>
 
           <Form.Group className="mb-3" controlId="formMessage">
@@ -83,9 +122,11 @@ function Contact() {
               name="message"
               value={message}
               onChange={handleInputChange}
+              onBlur={handleBlur}
               rows={3}
               placeholder="Your Message"
             />
+             {errors.message && <p className="error-text">{errors.message}</p>}
           </Form.Group>
 
           <Button variant="primary" type="submit">
@@ -93,16 +134,8 @@ function Contact() {
           </Button>
         </Form>
       </form>
-
-      {/* Display error messages if any */}
-      {errorMessages.length > 0 && (
-        <div className="error-messages">
-          {errorMessages.map((error, index) => (
-            <p key={index} className="error-text">{error}</p>
-          ))}
-        </div>
-      )}
-    </div>
+     </div> 
+ 
   );
 }
 
