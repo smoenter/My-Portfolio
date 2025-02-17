@@ -59,3 +59,45 @@ button {
   margin-top: 10px;
 }
 
+/* Background */
+body {
+  background-color: #ECF0F1; /* Light Gray */
+}
+
+/* Navbar */
+.navbar {
+  background-color: #2C3E50; /* Deep Blue */
+}
+
+.nav-link {
+  color: #FFFFFF; /* White text on navbar */
+}
+
+.nav-link:hover {
+  color: #1ABC9C; /* Vibrant Teal on hover */
+}
+
+/* Buttons */
+button {
+  background-color: #E67E22; /* Bright Orange */
+  color: #FFFFFF;
+}
+
+button:hover {
+  background-color: #D35400; /* Darker Orange on hover */
+}
+
+/* Portfolio Cards */
+.card {
+  background-color: #FFFFFF;
+  border: 1px solid #BDC3C7; /* Light gray border */
+}
+
+.card-title {
+  color: #2C3E50; /* Deep Blue for titles */
+}
+
+.card-text {
+  color: #34495E; /* Dark Charcoal for body text */
+}
+

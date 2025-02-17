@@ -14,7 +14,7 @@ export default function Footer() {
           </a> |
           <a href="https://github.com/smoenter" target="_blank" rel="noopener noreferrer">
             GitHub
-          </a> 
+            </a>
         </div>
       </div>
     </footer>
