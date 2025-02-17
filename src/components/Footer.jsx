@@ -23,11 +23,12 @@ export default function Footer() {
 
 const footerStyle = {
   backgroundColor: '#f8f9fa',
-  padding: '20px',
+  padding: '15px',
   textAlign: 'center',
   position: 'relative',
   bottom: '0',
   width: '100%',
+  borderRadius: '15px',
 };
 
 const containerStyle = {

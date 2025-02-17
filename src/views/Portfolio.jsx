@@ -16,7 +16,7 @@ function Portfolio() {
             <Card.Body>
               <Card.Title>Project 1: Digital Recipe Box</Card.Title>
               <Card.Text>
-                This group project was to create a digital recipe box allows you to store recipes to your digital recipe box, so you will never lose your favorite reciepes again. Type in the ingredients and add the instructions to the recipe, choose a category as to where you want to store your recipes then hit submit to save it. A quick and easy way to save your favorite recipes without having to lot of paper or space to store it.
+                This group project was to create a digital recipe box allows you to store recipes to your digital recipe box, so you will never lose your favorite reciepes again. This project used HTML, CSS, Javascript and GitHub.
               </Card.Text>
             </Card.Body>
             <Card.Footer>
@@ -34,7 +34,7 @@ function Portfolio() {
             <Card.Body>
               <Card.Title>Project 2: README Template</Card.Title>
               <Card.Text>
-                A Professional README generator to be able to use in futur projects with quick and easy access. This project used inquirer package and node index.js. I was also able to learn how to use screencastify to make a video of how the README worked. This project also allowed to improved my GitHub skills.
+                A Professional README generator to be able to use in futur projects with quick and easy access. This project used inquirer package, node index.js and Github. I was also able to learn how to use screencastify to make a video of how the README worked. This project also allowed to improved my GitHub skills.
               </Card.Text>
             </Card.Body>
             <Card.Footer>
