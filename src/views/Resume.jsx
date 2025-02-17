@@ -8,8 +8,7 @@ export default function Resume() {
       <Card.Body>
         <Card.Title>My Resume</Card.Title>
         <Card.Text>
-          Some quick example text to build on the card title and make up the
-          bulk of the card's content.
+          Below are my proficiencies, as well as a link to download my full resume.
         </Card.Text>
         <Button variant="primary" href="https://docs.google.com/document/d/1WbLNWkRH1pqX8_NOQGXvnJPpPI1hya3w1DnRKN3sjvU/edit?usp=sharing"
           target="_blank"
@@ -17,7 +16,7 @@ export default function Resume() {
       </Card.Body>
 
       <Card.Body>
-        <Card.Title>My Proficiencies</Card.Title>
+        <Card.Title>My Proficiencies:</Card.Title>
         <ListGroup className="mt-3">
           <ListGroup.Item>HTML5, CSS3, JavaScript (ES6+)</ListGroup.Item>
           <ListGroup.Item>React.js</ListGroup.Item>

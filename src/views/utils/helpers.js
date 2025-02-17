@@ -1,12 +1,15 @@
-export function validateEmail(email) {
-  const re = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
-  return re.test(String(email).toLowerCase());
-}
+// Validate if the name is not empty
+export const validateName = (name) => {
+  return name.trim() !== ''; // Name should not be empty
+};
 
-export function checkMessage(input) {
-  const message = /^[A-Za-z]\w{7,14}$/;
-  if (input.match(message)) {
-    return true;
-  }
-  return false;
-}
+// Validate if the email is in a correct format using a regular expression
+export const validateEmail = (email) => {
+  const emailRegex = /\S+@\S+\.\S+/;
+  return emailRegex.test(email); // Test the email with regex
+};
+
+// Check if the message is not empty
+export const checkMessage = (message) => {
+  return message.trim() !== ''; // Message should not be empty
+};
