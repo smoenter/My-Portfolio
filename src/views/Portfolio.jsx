@@ -12,7 +12,7 @@ function Portfolio() {
       <Row className="mb-4">
         <Col md={4}>
           <Card>
-            <Card.Img variant="top" src="holder.js/100px160" />
+            <Card.Img variant="top" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRjMHVXPt-NemX-odYqjPkzBL_9pVzY-KATIg&s" alt="picture of digit recipe box"/>
             <Card.Body>
               <Card.Title>Project 1: Digital Recipe Box</Card.Title>
               <Card.Text>
@@ -30,11 +30,11 @@ function Portfolio() {
 
         <Col md={4}>
           <Card>
-            <Card.Img variant="top" src="holder.js/100px160" />
+            <Card.Img variant="top" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFTO_pkbOvp1f91p9pkbe1pQVrn-ld9N_GQw&s" alt="Github readme generator picture" />
             <Card.Body>
               <Card.Title>Project 2: README Template</Card.Title>
               <Card.Text>
-                A Professional README generator to be able to use in futur projects
+                A Professional README generator to be able to use in futur projects with quick and easy access. This project used inquirer package and node index.js. I was also able to learn how to use screencastify to make a video of how the README worked. This project also allowed to improved my GitHub skills.
               </Card.Text>
             </Card.Body>
             <Card.Footer>
@@ -48,11 +48,11 @@ function Portfolio() {
 
         <Col md={4}>
           <Card>
-            <Card.Img variant="top" src="holder.js/100px160" />
+            <Card.Img variant="top" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTluYM5js7lH99BO4aUtPgChKPu1JuCPpjjAA&s" alt ="image of vehicles" />
             <Card.Body>
               <Card.Title>Project 3:  Vehicle Builder </Card.Title>
               <Card.Text>
-                Vehicle Builder. Create the car of your dreams or find one that is already exist for you. This code can also inform your if the truck can tow or if your motorbike can performed a wheelie. In this projected I learned how to use typescript
+                Vehicle Builder. Create the car of your dreams or find one that is already exist for you. This code can also inform your if the truck can tow or if your motorbike can performed a wheelie. This project was made using typescript and inquirer, and GitHub. 
               </Card.Text>
             </Card.Body>
             <Card.Footer>
@@ -68,11 +68,11 @@ function Portfolio() {
       <Row className="mb-4">
         <Col md={4}>
           <Card>
-            <Card.Img variant="top" src="holder.js/100px160" />
+            <Card.Img variant="top" src="https://play-lh.googleusercontent.com/pCQw51XRP4UPr-FCYDjvNnEpFa0HDGJjjLDldN3rmw4KkwhqPu0PZXE8EopmAxzH9mQ" alt="weather picture" />
             <Card.Body>
               <Card.Title>Project 4: Weather App</Card.Title>
               <Card.Text>
-                WeatherApp is a simple application that provides weather information for different locations.
+                WeatherApp is a simple application that provides weather information for different locations. This project allowed me learn how to work with API keys, API routes, how to deploy the app on render, and GitHub
               </Card.Text>
             </Card.Body>
             <Card.Footer>
@@ -86,7 +86,7 @@ function Portfolio() {
 
         <Col md={4}>
           <Card>
-            <Card.Img variant="top" src="holder.js/100px160" />
+            <Card.Img variant="top" src="https://i.etsystatic.com/34307078/r/il/353255/4924089117/il_fullxfull.4924089117_5pvu.jpg" alt="picture of an employee tracker" />
             <Card.Body>
               <Card.Title>Project 5: Employee Tracker</Card.Title>
               <Card.Text>
@@ -104,7 +104,7 @@ function Portfolio() {
 
         <Col md={4}>
           <Card>
-            <Card.Img variant="top" src="holder.js/100px160" />
+            <Card.Img variant="top" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTfwBzfI5mNLhqnNzJfJERffmmaeuh_HAgUKA&s" alt="coming soon picture"/>
             <Card.Body>
               <Card.Title>Project 6</Card.Title>
               <Card.Text>
