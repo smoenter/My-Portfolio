@@ -45,7 +45,7 @@ function Portfolio() {
         <Card.Text>
           WeatherApp is a simple application that provides weather information for different locations.
         </Card.Text>
-        <Button variant="primary" href="https://challenge-9-weather-app.onrender.com" target="_blank">Live Demo</Button> 
+        <Button variant="primary" href="https://challenge-9-weather-app.onrender.com" target="_blank">Live Demo</Button>
         <Button variant="secondary" href="https://github.com/smoenter/Challenge-9-Weather-App" target="_blank" className="mt-2">GitHub Repo</Button>
       </Card.Body>
 
@@ -67,15 +67,10 @@ function Portfolio() {
         <Button variant="primary" href="https://live-application-link.com" target="_blank">Live Demo</Button>
         <Button variant="secondary" href="https://github.com/yourusername/project6" target="_blank" className="mt-2">GitHub Repo</Button>
       </Card.Body>
-       <Card.Link href="https://github.com/smoenter">GitHub</Card.Link>
-       <Card.Link href="https://www.linkedin.com/in/stacey-moenter-6017a064/">Linkedin</Card.Link>
-
     </Card>
 
   );
 }
-
-
 
 
 export default Portfolio;

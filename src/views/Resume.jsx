@@ -1,69 +1,31 @@
 import React from 'react';
+import Card from 'react-bootstrap/Card';
+import { Button, ListGroup } from 'react-bootstrap';
 
 export default function Resume() {
   return (
-    <div className="resume-container">
-      <header>
-        <h1>Stacey Moenter</h1>
-        <p>Email: <a href="staceymoenter@gmail.com">staceymoenter@gamil.com</a> | Phone: (937) 361-9646</p>
-        <p>LinkedIn: <a href="https://www.linkedin.com/in/stacey-moenter-6017a064/" target="_blank" rel="noopener noreferrer">linkedin.com/in/staceymoenter</a></p>
-        <p>GitHub: <a href="https://github.com/smoenter" target="_blank" rel="noopener noreferrer">github.com/smoenter</a></p>
-      </header>
+    <Card>
+      <Card.Body>
+        <Card.Title>My Resume</Card.Title>
+        <Card.Text>
+          Some quick example text to build on the card title and make up the
+          bulk of the card's content.
+        </Card.Text>
+        <Button variant="primary" href="https://docs.google.com/document/d/1WbLNWkRH1pqX8_NOQGXvnJPpPI1hya3w1DnRKN3sjvU/edit?usp=sharing"
+          target="_blank"
+          download>Download My Resume</Button>
+      </Card.Body>
 
-      <section className="experience">
-        <h2>Experience</h2>
-        <div className="job">
-          <h3>Physical Therapist</h3>
-          <p>Ortho Advantage | 2007–Present</p>
-          <ul>
-            <li>Provided physical therapy services to patients with musculoskeletal and neurological conditions.</li>
-            <li>Developed personalized treatment plans for rehabilitation and pain management.</li>
-            <li>Collaborated with healthcare teams to ensure optimal patient care and progress.</li>
-            <li>Mentored new physical therapy staff, providing guidance and best practices.</li>
-          </ul>
-        </div>
-      </section>
-
-      <section className="education">
-        <h2>Education</h2>
-        <div className="degree">
-          <h3>Bootcamp for Computer Engineering</h3>
-          <p>Ohio State University</p>
-          <p>November 2024 – May 2025</p>
-          <p>Learning software development, problem-solving, and computer engineering fundamentals.</p>
-        </div>
-
-        <div className="degree">
-          <h3>Doctorate of Physical Therapy (DPT)</h3>
-          <p>Ohio University | 2004–2007</p>
-          <p>Comprehensive study of anatomy, kinesiology, and physical rehabilitation techniques.</p>
-        </div>
-
-        <div className="degree">
-          <h3>Bachelor of Science in Exercise Science</h3>
-          <p>High Point University | 2000–2004</p>
-          <p>Studied anatomy, biomechanics, and exercise science, with practical experience in rehabilitation and fitness.</p>
-        </div>
-      </section>
-
-      <section className="skills">
-        <h2>Skills</h2>
-        <ul>
-          <li>Physical Therapy: Musculoskeletal assessment, therapeutic exercise, injury prevention, rehabilitation.</li>
-          <li>Problem Solving: Ability to identify and resolve complex issues in patient care and technical fields.</li>
-          <li>Teamwork: Collaborating with healthcare teams, sharing knowledge, and improving patient outcomes.</li>
-          <li>Technical Skills: Familiarity with Python, JavaScript, and basic software development principles.</li>
-          <li>Communication: Strong verbal and written skills, able to explain complex concepts clearly.</li>
-        </ul>
-      </section>
-
-      <section className="certifications">
-        <h2>Certifications</h2>
-        <ul>
-          <li>Licensed Physical Therapist (State of Ohio)</li>
-          <li>CPR and First Aid Certified</li>
-        </ul>
-      </section>
-    </div>
+      <Card.Body>
+        <Card.Title>My Proficiencies</Card.Title>
+        <ListGroup className="mt-3">
+          <ListGroup.Item>HTML5, CSS3, JavaScript (ES6+)</ListGroup.Item>
+          <ListGroup.Item>React.js</ListGroup.Item>
+          <ListGroup.Item>Node.js, Express.js</ListGroup.Item>
+          <ListGroup.Item>SQL, PostgreSQL</ListGroup.Item>
+          <ListGroup.Item>Git, GitHub</ListGroup.Item>
+        </ListGroup>
+      </Card.Body>
+    </Card>
   );
 }
