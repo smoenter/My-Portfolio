@@ -33,6 +33,11 @@
   }
 }
 
+.header {
+  text-align: right; 
+  padding: 20px; 
+}
+
 .card {
   padding: 2em;
  
