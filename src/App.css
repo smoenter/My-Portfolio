@@ -34,8 +34,7 @@
 }
 
 .header {
-  text-align: right; 
-  padding: 20px; 
+ padding: 20px; 
 }
 
 .card {
@@ -48,8 +47,9 @@
 }
 
 .error-text {
-  color: red;
-  font-size: 14px;
+   color: rgb(245, 140, 219);
+  font-size: 20px;
+  font-weight: bold;
   margin-top: 5px;
 }
 
@@ -67,39 +67,44 @@ button {
 
 /* Background */
 body {
-  background-color: #366774; /* Light Gray */
+  background-color: #366774; 
 }
 
 /* Navbar */
 .navbar {
-  background-color: #2C3E50; /* Deep Blue */
+  background-color: #2C3E50; 
+  display: flex;
+  justify-content: space-between; 
+  padding: 0.5em 1em; 
 }
 
 .nav-link {
-  color: #FFFFFF; /* White text on navbar */
+  color: #FFFFFF;
+  padding: 0.5em 1em; 
+  transition: color 0.3s ease; 
 }
 
 .nav-link:hover {
-  color: #1ABC9C; /* Vibrant Teal on hover */
+  color: #1ABC9C; 
 }
 
 
 /* Portfolio Cards */
 .card {
   background-color: #dbdada;
-  border: 1px solid #BDC3C7; /* Light gray border */
+  border: 1px solid #BDC3C7; 
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .card-title {
-  color: #2C3E50; /* Deep Blue for titles */
+  color: #2C3E50; 
 }
 
 .card-text {
-  color: #34495E; /* Dark Charcoal for body text */
+  color: #34495E; 
 }
 
 /* Hover effect */
 .card:hover {
-  transform: translateY(-10px); /* Moves the card upwards */
+  transform: translateY(-10px); 
 }

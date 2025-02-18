@@ -3,11 +3,11 @@ import React from 'react';
 import Card from 'react-bootstrap/Card';
 import Nav from 'react-bootstrap/Nav';
 
-export default function NavLinks() {
+ function NavLinks() {
   return (
     <Card>
-      <Card.Header>
-        <Nav variant="pills" defaultActiveKey="#first">
+      <Card.Header >
+        <Nav className="nav-link" variant="pills" defaultActiveKey="#first">
           <Nav.Item>
             <Nav.Link as={NavLink} to="/about">About Me</Nav.Link>
           </Nav.Item>
@@ -26,5 +26,5 @@ export default function NavLinks() {
   );
 }
 
-
+export default NavLinks;
 
