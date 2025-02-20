@@ -1,3 +1,4 @@
+/* Default styles for larger screens */
 #root {
   max-width: 1280px;
   margin: 0 auto;
@@ -5,50 +6,17 @@
   text-align: center;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
-}
-
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
-}
-
 .header {
- padding: 20px; 
+  padding: 20px;
 }
 
 .card {
   padding: 2em;
- 
-}
-
-.read-the-docs {
-  color: #888;
 }
 
 .error-text {
-   color: rgb(245, 140, 219);
-  font-size: 20px;
+  color: rgb(245, 140, 219);
+  font-size: 14px;
   font-weight: bold;
   margin-top: 5px;
 }
@@ -67,44 +35,105 @@ button {
 
 /* Background */
 body {
-  background-color: #366774; 
+  background-color: #366774;
 }
 
 /* Navbar */
 .navbar {
-  background-color: #2C3E50; 
+  background-color: #2C3E50;
   display: flex;
-  justify-content: space-between; 
-  padding: 0.5em 1em; 
+  justify-content: space-between;
+  padding: 0.5em 1em;
 }
 
 .nav-link {
   color: #FFFFFF;
-  padding: 0.5em 1em; 
-  transition: color 0.3s ease; 
+  padding: 0.5em 1em;
+  transition: color 0.3s ease;
 }
 
 .nav-link:hover {
-  color: #1ABC9C; 
+  color: #1ABC9C;
 }
-
 
 /* Portfolio Cards */
 .card {
   background-color: #dbdada;
-  border: 1px solid #BDC3C7; 
+  border: 1px solid #BDC3C7;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .card-title {
-  color: #2C3E50; 
+  color: #2C3E50;
 }
 
 .card-text {
-  color: #34495E; 
+  color: #34495E;
 }
 
 /* Hover effect */
 .card:hover {
-  transform: translateY(-10px); 
+  transform: translateY(-10px);
+}
+
+/* Media queries for smaller screens */
+@media (max-width: 768px) {
+  #root {
+    padding: 1rem;
+  }
+
+  .header {
+    padding: 10px;
+  }
+
+  .card {
+    padding: 1em;
+  }
+
+  .error-text {
+    font-size: 12px;
+  }
+
+  .error-messages {
+    max-width: 100%;
+  }
+
+  button {
+    margin-top: 5px;
+  }
+
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .nav-link {
+    padding: 0.5em 0;
+  }
+
+  .card-title {
+    font-size: 1.5rem;
+  }
+
+  .card-text {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .card-title {
+    font-size: 1.2rem;
+  }
+
+  .card-text {
+    font-size: 0.9rem;
+  }
+
+  .navbar {
+    padding: 0.5em;
+  }
+
+  .nav-link {
+    padding: 0.5em 0;
+  }
 }
