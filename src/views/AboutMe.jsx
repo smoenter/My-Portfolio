@@ -9,7 +9,7 @@ function AboutMe() {
     <Card>
       <Card.Body className="d-flex flex-column align-items-center justify-content-center">
       <Card.Title>About Me</Card.Title>
-      <Card.Img variant="top" src="/src/assets/images/stacey_moenter.jpg" alt="Profile picture" style={{ width: '25%', height: 'auto', borderRadius: '8px' }}/>
+      <Card.Img variant="top" src="/src/assets/images/stacey_moenter.png" alt="Profile picture" style={{ width: '25%', height: 'auto', borderRadius: '8px' }}/>
       </Card.Body>
       
       <Card.Body className="d-flex flex-column align-items-center justify-content-center">

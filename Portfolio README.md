@@ -3,14 +3,15 @@
 ## Table of Contents
 1. [Introduction](#introduction)
 2. [Features](#features)
-3. [Installation](#installation)
-4. [Usage](#usage)
-5. [Screenshots](#screenshots)
-6. [Technologies Used](#technologies-used)
-7. [Contributing](#contributing)
-8. [License](#license)
-8. [Acknowledgement](#acknowledgement)
-9. [Contact](#contact)
+3. [Links](#links)
+4. [Installation](#installation)
+5. [Usage](#usage)
+6. [Screenshots](#screenshots)
+7. [Technologies Used](#technologies-used)
+8. [Contributing](#contributing)
+9. [License](#license)
+10. [Acknowledgement](#acknowledgement)
+11. [Contact](#contact)
 
 ## Introduction
 Welcome to my portfolio! This project showcases my work and skills in web development using React and bootstrap.
@@ -20,10 +21,14 @@ Welcome to my portfolio! This project showcases my work and skills in web develo
 - Interactive UI components
 - Dynamic content
 
+## Links 
+- Github: https://github.com/smoenter/My-Portfolio
+- Netlify: 
+
 ## Installation
 To install and run this project locally, follow these steps:
 ```bash
-git clone https://github.com/yourusername/portfolio.git
+git clone https://github.com/smoenter/My-Portfolio
 cd portfolio
 npm install
 npm run dev
@@ -33,8 +38,8 @@ npm run dev
 After installation, open your browser and navigate to `http://localhost:3000` to view the portfolio.
 
 ## Screenshots
-![Screenshot 1](path/to/screenshot1.png)
-![Screenshot 2](path/to/screenshot2.png)
+![Screenshot 1](src/assets/Images/screenshot%201.png)
+![Screenshot 2](src/assets/Images/screenshot%202.png)
 
 ## Technologies Used
 - React
@@ -57,6 +62,7 @@ This project was done with the help of the following:
 - Tutor Justin, who help me set up the project and helped me set up Emailjs
 - ChatGPT 
 - GitHub copilot 
+- YouTube https://www.youtube.com/watch?v=7GZscm-pAtc - to get my portfolio to deploy
 
 ## Contact
 For any questions or feedback, please contact me at [staceymoenter@gmail.com](mailto:staceymoenter@gmail.com).
