@@ -11,6 +11,8 @@ function Portfolio() {
       {/* First Row */}
       <Row className="mb-4">
         <Col md={4}>
+
+        {/* Card for Project 1 */}
           <Card>
             <Card.Img variant="top" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRjMHVXPt-NemX-odYqjPkzBL_9pVzY-KATIg&s" alt="picture of digit recipe box"/>
             <Card.Body>
@@ -28,6 +30,8 @@ function Portfolio() {
           </Card>
         </Col>
 
+
+      {/* Cared for Project 2 */}
         <Col md={4}>
           <Card>
             <Card.Img variant="top" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFTO_pkbOvp1f91p9pkbe1pQVrn-ld9N_GQw&s" alt="Github readme generator picture" />
@@ -46,6 +50,7 @@ function Portfolio() {
           </Card>
         </Col>
 
+      {/* Card for Project 3 */}
         <Col md={4}>
           <Card>
             <Card.Img variant="top" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTluYM5js7lH99BO4aUtPgChKPu1JuCPpjjAA&s" alt ="image of vehicles" />
@@ -65,6 +70,7 @@ function Portfolio() {
         </Col>
       </Row>
 
+    {/* Card for Project 4 */}
       <Row className="mb-4">
         <Col md={4}>
           <Card>
@@ -84,6 +90,7 @@ function Portfolio() {
           </Card>
         </Col>
 
+        {/* Card for Project 5 */}
         <Col md={4}>
           <Card>
             <Card.Img variant="top" src="https://i.etsystatic.com/34307078/r/il/353255/4924089117/il_fullxfull.4924089117_5pvu.jpg" alt="picture of an employee tracker" />
@@ -102,6 +109,7 @@ function Portfolio() {
           </Card>
         </Col>
 
+      {/* Card for project 6 */}
         <Col md={4}>
           <Card>
             <Card.Img variant="top" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTfwBzfI5mNLhqnNzJfJERffmmaeuh_HAgUKA&s" alt="coming soon picture"/>

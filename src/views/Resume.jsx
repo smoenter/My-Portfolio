@@ -4,6 +4,7 @@ import { Button, ListGroup } from 'react-bootstrap';
 
 export default function Resume() {
   return (
+    // Card with a link to download my resume
     <Card>
       <Card.Body>
         <Card.Title>My Resume</Card.Title>
@@ -15,6 +16,7 @@ export default function Resume() {
           download>Download My Resume</Button>
       </Card.Body>
 
+    {/* Card with list of my proficiencies */}
       <Card.Body>
         <Card.Title>My Proficiencies:</Card.Title>
         <ListGroup className="mt-3">
